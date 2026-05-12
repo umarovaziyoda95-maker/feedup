@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo-side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-logo { height: 45px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.action-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-type {
+    background: #E31E24;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.phone-box {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.phone-number { font-weight: 700; font-size: 16px; }
+.work-hours { font-size: 10px; color: #999; }
+
+/* Banner */
+.banner-section {
+    padding: 30px 40px;
+}
+
+.banner-card {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #E31E24;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    position: relative;
+    color: white;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.product-view {
+    flex: 1;
+    z-index: 2;
+}
+
+.food-img {
+    width:200%;
+    transform: scale(1.1);
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));
+}
+
+.content-view {
+    flex: 1;
+    text-align: right;
+}
+
+.mini-brand {
+    background: #000;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.f-red { color: #E31E24; }
+
+.offer-title { font-size: 32px; margin-bottom: 5px; }
+.offer-desc { font-size: 20px; opacity: 0.9; margin-bottom: 30px; }
+
+.promo-text {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.handwriting {
+    font-family: 'Dancing Script', cursive;
+    color: #FFD700;
+    font-size: 85px;
+    position: absolute;
+    right: 10px;
+    top: -55px;
+    z-index: 1;
+}
+
+.main-title {
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.discount { font-size: 28px; font-weight: bold; }
+
+.price-tag {
+    background: #FFD700;
+    color: #000;
+    padding: 5px 30px;
+    border-radius: 40px;
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.old-price {
+    font-size: 26px;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Navigatsiya elementlari */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.left-arrow { left: 15px; }
+.right-arrow { right: 15px; }
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot { width: 8px; height: 8px; background: rgba(255,255,255,0.4); border-radius: 50%; }
+.dot.active { width: 25px; border-radius: 10px; background: #fff; }
+
+/* Kategoriyalar */
+.category-bar {
+    display: flex;
+    gap: 15px;
+    padding: 0 40px;
+    overflow-x: auto;
+}
+
+.cat-item {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #f5f5f5;
+    cursor: pointer;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.cat-item.active {
+    border: 1px solid #E31E24;
+    color: #E31E24;
+    background: #fff;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Ikonkalar orasidagi masofa */
+    margin-right: 20px;
+    color: #444; /* Ikonka rangi */
+}
+
+.header-icons i {
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+    stroke-width: 1.5px; 
+}
+
+.header-icons i:hover {
+    color: #E31E24;
+}
+
+/* Section Header Layout */
+.products-section {
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header::before, .section-header::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.section-header h2 {
+    padding: 0 30px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Card Design */
+.product-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    background: #f9f9f9;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Badges */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #FF2D55;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #999;
+}
+
+.wishlist-btn i {
+    width: 18px;
+    height: 18px;
+}
+
+/* Card Info */
+.card-info {
+    padding: 20px;
+}
+
+.card-info h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.price-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+}
+
+.current-price::after {
+    content: " so'm"; /* Narx birligi uchun */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.old-price-card {
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: line-through;
+}
+
+/* Add Button */
+.add-btn {
+    border: 1px solid #009966;
+    background: transparent;
+    color: #009966;
+    padding: 8px 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background: #009966;
+    color: white;
+}
+/* Общие стили для секции */
+.products-section {
+    padding: 20px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Заголовок с линиями по бокам */
+.section-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header::before, .section-header::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.section-header h2 {
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+/* Сетка карточек */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки как на фото */
+    gap: 20px;
+}
+
+/* Карточка товара */
+.product-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card-image {
+    background: #f8f8f8;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Розовый бейдж "Yangi mahsulot" */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #ff2d55;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* Кнопка сердечка */
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #ff2d55; /* Красный цвет контура сердечка */
+}
+
+/* Инфо блок */
+.card-info {
+    padding: 15px;
+}
+
+.card-info h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-price {
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.old-price-card {
+    display: block;
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: line-through;
+}
+
+/* Кнопка "Добавить" */
+.add-btn {
+    border: 1px solid #4caf50;
+    background: #fff;
+    color: #4caf50;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    background: #4caf50;
+    color: #070707;
+}
+
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 280px;
+  border-radius: 16px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.wishlist {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ff6b6b;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.image-box {
+  height: 180px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 900;
+  color: #000;
+}
+
+.old-price {
+  font-size: 13px;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.add-btn {
+  border: 1px solid #22c55e;
+  background: transparent;
+  color: #22c55e;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #f0fdf4;
+}
+
+/* Container uchun */
+.combo-wrapper {
+  display: flex;
+  gap: 30px; /* Kartochkalar orasini ochadi */
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Kartochkaning o'zi */
+.combo-item-box {
+  background: #ffffff;
+  width: 290px;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; /* Padding kenglikka ta'sir qilmasligi uchun */
+}
+
+/* Ustma-ust tushib qolmasligi uchun rasm qutisi */
+.img-container {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+}
+
+.fav-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ff5a5a;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.combo-name {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  color: #222;
+}
+
+.action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.price-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.old-price-tag {
+  font-size: 13px;
+  color: #a0a0a0;
+  text-decoration: line-through;
+}
+
+.buy-button {
+  border: 1px solid #16a34a;
+  background: white;
+  color: #16a34a;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-button:hover {
+  background: #f0fdf4;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 1024px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .product-grid { grid-template-columns: 1fr; }
+}
+
+
+/* Responsivlik: Mobil telefonda ikonkalarni kamaytirish yoki yashirish mumkin */
+@media (max-width: 768px) {
+    .header-icons {
+        display: none; /* Mobil versiyada joy yetmasa yashirish uchun */
+    }
+}
